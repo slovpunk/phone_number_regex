@@ -7,7 +7,9 @@ public class Main {
         Numbers numbers = new NumbersImpl();
 
         String whiteList = "444,4562123,555";
-        Pattern blacklistPattern = numbers.createRegexPattern("345678,2345646,1231323");
+        String blackList = "345678,2345646,1231323";
+
+        Pattern blacklistPattern = numbers.createRegexPattern(blackList);
         Pattern whitelistPattern = numbers.createRegexPattern(whiteList);
 
 
